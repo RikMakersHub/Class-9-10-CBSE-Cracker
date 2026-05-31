@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Hub - Class 9</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f7f6; color: #333; }
+        header { background-color: #0f172a; color: white; text-align: center; padding: 40px 20px; }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .subtitle { color: #94a3b8; margin-top: 10px; }
+        
+        .class-toggle-container { display: flex; justify-content: center; gap: 20px; margin: -25px 0 30px 0; }
+        .class-btn { background-color: #cbd5e1; color: #475569; border: none; padding: 15px 35px; font-size: 1.1rem; font-weight: bold; border-radius: 50px; cursor: pointer; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+        .class-btn.active { background-color: #0ea5e9; color: white; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; display: flex; gap: 25px; }
+        .sidebar { flex: 1; display: flex; flex-direction: column; gap: 12px; min-width: 200px; }
+        .tab-btn { background: white; border: 1px solid #e2e8f0; padding: 15px; text-align: left; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        .tab-btn.active, .tab-btn:hover { border-left: 5px solid #10b981; background-color: #f8fafc; font-weight: bold; }
+        
+        .content-area { flex: 3; }
+        .content-panel { display: none; }
+        .content-panel.active { display: block; }
+        .card { background: white; border-radius: 12px; padding: 25px; border-top: 4px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .card h3 { margin-top: 0; color: #1e293b; }
+        .badge { background-color: #e2e8f0; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-right: 5px; color: #475569; }
+        p { color: #64748b; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📚 CBSE Doubt-Buster Hub</h1>
+        <p class="subtitle">Class 9 Curriculum Syllabus Blueprints</p>
+    </header>
+
+    <!-- 🔗 Linking to the files using actual anchor tags href -->
+    <div class="class-toggle-container">
+        <a href="class9.html" class="class-btn active">🎓 Class 9 Portal</a>
+        <a href="class10.html" class="class-btn">🚀 Class 10 Portal</a>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <button id="tab-physics" class="tab-btn active" onclick="switchSubject('physics')">⚡ Physics</button>
+            <button id="tab-chemistry" class="tab-btn" onclick="switchSubject('chemistry')">🧪 Chemistry</button>
+            <button id="tab-biology" class="tab-btn" onclick="switchSubject('biology')">🌱 Biology</button>
+            <button id="tab-math" class="tab-btn" onclick="switchSubject('math')">📐 Mathematics</button>
+        </div>
+
+        <!-- Class 9 Material -->
+        <div class="content-area">
+            <div id="physics" class="content-panel active">
+                <div class="card"><h3>Chapter 7: Motion</h3><span class="badge">Kinematics</span><p>Distance, displacement, uniform/non-uniform motion, straight-line graphs, and equations of motion.</p></div>
+                <div class="card"><h3>Chapter 8: Force and Laws of Motion</h3><span class="badge">Dynamics</span><p>Newton's three laws, inertia, mass, momentum, and conservation of momentum principles.</p></div>
+                <div class="card"><h3>Chapter 9: Gravitation</h3><span class="badge">Gravity</span><p>Universal law of gravitation, acceleration due to gravity (g), mass vs weight, Archimedes' Principle.</p></div>
+                <div class="card"><h3>Chapter 10: Work and Energy</h3><span class="badge">Mechanics</span><p>Work done by a force, kinetic and potential energy forms, law of conservation of energy.</p></div>
+                <div class="card"><h3>Chapter 11: Sound</h3><span class="badge">Waves</span><p>Production and propagation of sound, longitudinal waves, range of hearing, and SONAR applications.</p></div>
+            </div>
+
+            <div id="chemistry" class="content-panel">
+                <div class="card"><h3>Chapter 1: Matter in Our Surroundings</h3><span class="badge">States</span><p>Physical nature of matter, solid/liquid/gas characteristics, temperature changes, and evaporation.</p></div>
+                <div class="card"><h3>Chapter 2: Is Matter Around Us Pure</h3><span class="badge">Mixtures</span><p>Elements, compounds, mixtures, solutions, colloids, suspensions, and physical vs chemical changes.</p></div>
+                <div class="card"><h3>Chapter 3: Atoms and Molecules</h3><span class="badge">Core Formulas</span><p>Laws of chemical combination, Dalton's atomic theory, writing formulas, and molecular mass calculation.</p></div>
+                <div class="card"><h3>Chapter 4: Structure of the Atom</h3><span class="badge">Atomic Models</span><p>Electrons, protons, neutrons, Rutherford/Bohr atomic models, valency, and isotopes.</p></div>
+            </div>
+
+            <div id="biology" class="content-panel">
+                <div class="card"><h3>Chapter 5: The Fundamental Unit of Life</h3><span class="badge">Cells</span><p>Cell structures, plasma membrane, cell wall, nucleus, cytoplasm, and functional cell organelles.</p></div>
+                <div class="card"><h3>Chapter 6: Tissues</h3><span class="badge">Organisms</span><p>Plant tissues (meristematic & permanent) and animal tissues (epithelial, muscular, nervous).</p></div>
+                <div class="card"><h3>Chapter 12: Improvement in Food Resources</h3><span class="badge">Agriculture</span><p>Crop variety improvement, fertilizers, manure, animal husbandry, and fish production.</p></div>
+            </div>
+
+            <div id="math" class="content-panel">
+                <div class="card"><h3>Chapter 1: Number Systems</h3><span class="badge">Numbers</span><p>Rational and irrational numbers, real numbers number line representation, laws of exponents.</p></div>
+                <div class="card"><h3>Chapter 2: Polynomials</h3><span class="badge">Algebra</span><p>Zeroes of a polynomial, Remainder Theorem, Factor Theorem, and algebraic identities.</p></div>
+                <div class="card"><h3>Chapter 3: Coordinate Geometry</h3><span class="badge">Graphs</span><p>Cartesian plane mapping, x-axis, y-axis, and plotting coordinates.</p></div>
+                <div class="card"><h3>Chapter 4: Linear Equations in 2 Variables</h3><span class="badge">Algebra</span><p>Introduction to standard linear equations, drawing graphs, and finding solutions.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchSubject(subjectId) {
+            // Hide all content panels
+            document.querySelectorAll('.content-panel').forEach(panel => panel.classList.remove('active'));
+            // Show selected subject panel
+            document.getElementById(subjectId).classList.add('active');
+            
+            // Toggle sidebar button styling
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('tab-' + subjectId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
