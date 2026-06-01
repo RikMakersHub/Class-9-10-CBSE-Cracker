@@ -1,6 +1,7 @@
-# 📚 Class 10 CBSE Cracker & Hub
+# 📚 Class 10 CBSE Cracker by RikMakersHub
 
-An interactive, high-performance web platform built for Class 9 and Class 10 CBSE students. This platform combines a comprehensive curriculum syllabus tracker with an embedded, secure AI study companion and a built-in daily task planner.
+A comprehensive, high-performance study dashboard ecosystem engineered under the **RikMakersHub** banner for Class 9 and Class 10 CBSE students along with an amazing study planner.
+
 
 🔗 **Live Platform Link:** [https://github.io](https://rikmakershub.github.io/Class-9-10-CBSE-Cracker/)
 
