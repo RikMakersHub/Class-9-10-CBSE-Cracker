@@ -2,10 +2,12 @@
 
 An interactive, high-performance web platform built for Class 9 and Class 10 CBSE students. This platform combines a comprehensive curriculum syllabus tracker with an embedded, secure AI study companion and a built-in daily task planner.
 
-🔗 **Live Platform Link:** [https://github.io](https://github.io)
+🔗 **Live Platform Link:** [https://github.io](https://rikmakershub.github.io/Class-9-10-CBSE-Cracker/)
 
+(https://rikmakershub.github.io/Class-9-10-CBSE-Cracker/class9.html)
 ---
-
+(https://rikmakershub.github.io/Class-9-10-CBSE-Cracker/class10.html)
+---
 ## 🚀 Premium Features
 
 - **Dual-Portal Framework:** Clean, multi-page layout architecture with native `href` navigation routing between Class 9 and Class 10 workspaces.
@@ -46,5 +48,5 @@ The chatbot's core personality is anchored firmly using custom instructions:
 ---
 
 ## 📜 License & Ownership
-© 2026 class 10 CBSE cracker. All Rights Reserved. 
+© 2026 Class 9-10 CBSE cracker. All Rights Reserved. 
 Designed and maintained by an independent student developer and competitive programmer.
